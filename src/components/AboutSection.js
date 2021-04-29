@@ -1,9 +1,11 @@
 import React from 'react';
 import profile from "../img/profile.jpg";
+//Styled
+import styled from "styled-components";
 
 const AboutSection = () => {
     return (
-        <div>
+        <About>
             <div className="description">
                 <div className="title">
                     <div className="hide">
@@ -24,8 +26,18 @@ const AboutSection = () => {
             <div className="image">
                 <img src={profile} alt="Fabio Torti" />
             </div>
-        </div>
+        </About>
     )
-}
+};
+
+// Styled Components
+const About = styled.div`
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 10rem;
+    color: white;
+`
 
 export default AboutSection
