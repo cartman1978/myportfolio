@@ -3,39 +3,73 @@ import React from 'react';
 import webdesign from '../img/webdesign.png';
 import backend from '../img/backend.png';
 import web from '../img/web.jpg';
+// Styles
+import { About, Description, Image } from "../styles";
+import styled from 'styled-components';
 
 const ServicesSection = () => {
     return (
-        <div>
-            <div className="services">
-                <div className="description">
-                    <h2>My <span>skills</span></h2>
-                    <div className="cards">
-                        <div className="card">
-                            <div className="icon">
-                                <img src={webdesign} alt="frontend" />
-                                <h3>Frontend</h3>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div className="card">
-                            <div className="icon">
-                                <img src={backend} alt="backend" />
-                                <h3>Backend</h3>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-
-            <div className="image">
+        <Skills>
+            <Description>
+                <h2>My <span>skills</span></h2>
+                <Cards>
+                    <Card>
+                        <div className="icon">
+                            <img src={webdesign} alt="frontend" />
+                            <h3> Frontend</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </Card>
+                    <Card>
+                        <div className="icon">
+                            <img src={backend} alt="backend" />
+                            <h3> Backend</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </Card>
+                </Cards>
+            </Description>
+            <Image>
                 <img src={web} alt="web" />
-            </div>
+            </Image>
 
-        </div>
+        </Skills>
+
+
     )
-}
+
+};
+
+const Skills = styled(About)`
+    
+    h2 {
+        padding-bottom: 5rem;
+    }
+
+    p {
+        width: 70%;
+        padding: 2rem 0rem 4rem 0rem;
+    }
+`;
+
+const Cards = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+`;
+
+const Card = styled.div`
+    flex-basis: 20rem;
+    .icon {
+        display: flex;
+        align-items: center;
+    }
+    h3 {
+        background: #fff;
+        color: #000;
+        margin-left: 1rem;
+        padding: 1rem;
+    }
+`;
 
 export default ServicesSection

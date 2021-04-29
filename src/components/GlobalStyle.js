@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         background: #5959f2;
+        font-family: 'Poppins', sans-serif;
     }
 
     button {
@@ -21,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
         border: 3px solid #f7c456;
         color: white;
         transition: all 0.5s ease;
+        font-family: 'Poppins', sans-serif;
         &:hover {
             background-color: #f7c456;
             color: white;
