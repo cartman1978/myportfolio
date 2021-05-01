@@ -13,29 +13,29 @@ const Projects = () => {
             <Website>
                 <h2>Super Mario</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/projects/supermario">
                     <img src={mario} alt="supermario" />
                 </Link>
             </Website>
             <Website>
                 <h2>Hiking Tour</h2>
                 <div className="line"></div>
-                <Link>
-                    <img src={tour} alt="supermario" />
+                <Link to="/projects/tour">
+                    <img src={tour} alt="tour" />
                 </Link>
             </Website>
             <Website>
                 <h2>Sport News</h2>
                 <div className="line"></div>
-                <Link>
-                    <img src={sport} alt="supermario" />
+                <Link to="/projects/sport-news">
+                    <img src={sport} alt="sport-news" />
                 </Link>
             </Website>
             <Website>
                 <h2>Videogame Quizzes</h2>
                 <div className="line"></div>
-                <Link>
-                    <img src={videogame} alt="supermario" />
+                <Link to="/projects/videogames">
+                    <img src={videogame} alt="videogame" />
                 </Link>
             </Website>
         </Work>
