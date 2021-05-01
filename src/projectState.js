@@ -6,7 +6,7 @@ import videogame from "./img/videogame.jpg";
 export const projectState = () => {
     return [
         {
-            title: "The Movie app",
+            title: "Super Mario",
             mainImg: mario,
             secondaryImg: mario,
             url: "/projects/supermario",
@@ -31,7 +31,7 @@ export const projectState = () => {
         {
             title: "The Hiking Tour",
             mainImg: tour,
-            url: "/work/tour",
+            url: "/projects/tour",
             secondaryImg: tour,
             awards: [
                 {
@@ -55,7 +55,7 @@ export const projectState = () => {
         {
             title: "World Sport News",
             mainImg: sport,
-            url: "/work/sport-news",
+            url: "/projects/sport-news",
             secondaryImg: sport,
             awards: [
                 {
@@ -78,7 +78,7 @@ export const projectState = () => {
         {
             title: "Video Game Quizzes",
             mainImg: videogame,
-            url: "/work/tour",
+            url: "/projects/videogame",
             secondaryImg: videogame,
             awards: [
                 {

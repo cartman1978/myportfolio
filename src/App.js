@@ -6,6 +6,7 @@ import AboutMe from "./pages/AboutMe";
 import Nav from "./components/Nav";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import ProjectDetails from './pages/ProjectDetails';
 // Router
 import { Switch, Route } from "react-router-dom";
 
@@ -19,8 +20,12 @@ function App() {
           <AboutMe />
         </Route>
 
-        <Route path="/Projects">
+        <Route path="/Projects" exact>
           <Projects />
+        </Route>
+
+        <Route>
+          <ProjectDetails path="/Projects/:id" />
         </Route>
 
         <Route path="/Contact">
