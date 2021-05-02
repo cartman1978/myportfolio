@@ -8,30 +8,35 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import ProjectDetails from './pages/ProjectDetails';
 // Router
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
+// Animation
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <Switch>
-        <Route path="/" exact>
-          <AboutMe />
-        </Route>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route path="/" exact>
+            <AboutMe />
+          </Route>
 
-        <Route path="/Projects" exact>
-          <Projects />
-        </Route>
+          <Route path="/projects" exact>
+            <Projects />
+          </Route>
 
-        <Route>
-          <ProjectDetails path="/Projects/:id" />
-        </Route>
+          <Route path="/projects/:id">
+            <ProjectDetails />
+          </Route>
 
-        <Route path="/Contact">
-          <Contact />
-        </Route>
-      </Switch>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+        </Switch>
+      </AnimatePresence>
     </div>
   );
 }

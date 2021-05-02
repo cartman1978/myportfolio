@@ -6,10 +6,19 @@ import mario from '../img/mario.jpg';
 import tour from '../img/tour.png';
 import sport from '../img/sport.png';
 import videogame from '../img/videogame.jpg';
+// Animation
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../animation';
 
 const Projects = () => {
     return (
-        <Work>
+        <Work
+            style={{ background: "#fff" }}
+            exit="exit"
+            variants={pageAnimation}
+            initial="hidden"
+            animate="show"
+        >
             <Website>
                 <h2>Super Mario</h2>
                 <div className="line"></div>
@@ -42,7 +51,7 @@ const Projects = () => {
     )
 };
 
-const Work = styled.div`
+const Work = styled(motion.div)`
     min-height: 100vh;
     overflow: hidden;
     padding: 5rem 10rem;
