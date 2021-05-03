@@ -18,6 +18,7 @@ import {
 } from '../animation';
 import { useScroll } from '../components/useScroll';
 
+
 const Projects = () => {
     const [element, controls] = useScroll();
     const [element2, controls2] = useScroll();
@@ -80,6 +81,7 @@ const Projects = () => {
                     <motion.img variants={photoAnim} src={videogame} alt="videogame" />
                 </Link>
             </Website>
+
         </Work>
     )
 };
