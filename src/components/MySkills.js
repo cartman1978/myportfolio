@@ -3,11 +3,18 @@ import styled from "styled-components";
 import { About } from "../styles";
 import Toggle from './Toggle';
 import { AnimateSharedLayout } from 'framer-motion';
+import { useScroll } from './useScroll';
+import { scrollReveal } from '../animation';
 
 const MySkills = () => {
-
+    const [element, controls] = useScroll();
     return (
-        <Service>
+        <Service
+            variants={scrollReveal}
+            ref={element}
+            animate={controls}
+            initial="hidden"
+        >
             <h2>See what <span>I can do</span></h2>
             <AnimateSharedLayout>
                 <Toggle title="Who I Am?">

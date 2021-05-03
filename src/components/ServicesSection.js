@@ -6,11 +6,17 @@ import web from '../img/web.jpg';
 // Styles
 import { About, Description, Image } from "../styles";
 import styled from 'styled-components';
-
+import { scrollReveal } from '../animation';
+import { useScroll } from './useScroll';
 const ServicesSection = () => {
+    const [element, controls] = useScroll();
     return (
 
-        <Skills>
+        <Skills
+            variants={scrollReveal}
+            animate={controls}
+            initial="hidden"
+            ref={element}>
             <Description>
                 <h2>My <span>skills</span></h2>
                 <Cards>
