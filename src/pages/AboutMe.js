@@ -6,20 +6,22 @@ import MySkills from "../components/MySkills";
 // Animation
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
+import ScrollTop from '../components/ScrollTop';
 
 const AboutMe = () => {
     return (
-        <>
-            <motion.div
-                exit="exit"
-                initial="hidden"
-                animate="show"
-                variants={pageAnimation}>
-                <AboutSection />
-                <ServiceSection />
-                <MySkills />
-            </motion.div>
-        </>
+
+        <motion.div
+            exit="exit"
+            initial="hidden"
+            animate="show"
+            variants={pageAnimation}>
+            <AboutSection />
+            <ServiceSection />
+            <MySkills />
+            <ScrollTop />
+        </motion.div>
+
     );
 
 

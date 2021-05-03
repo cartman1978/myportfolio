@@ -17,7 +17,7 @@ import {
     sliderContainer,
 } from '../animation';
 import { useScroll } from '../components/useScroll';
-
+import ScrollTop from '../components/ScrollTop';
 
 const Projects = () => {
     const [element, controls] = useScroll();
@@ -81,7 +81,7 @@ const Projects = () => {
                     <motion.img variants={photoAnim} src={videogame} alt="videogame" />
                 </Link>
             </Website>
-
+            <ScrollTop />
         </Work>
     )
 };
