@@ -2,15 +2,17 @@ import React, { useState } from 'react';
 import styled from "styled-components";
 import { About } from "../styles";
 import Toggle from './Toggle';
+import { AnimateSharedLayout } from 'framer-motion';
 
 const MySkills = () => {
 
     return (
         <Service>
             <h2>See what <span>I can do</span></h2>
-            <Toggle>
-                <div className="question">
-                    <h4>Who I Am?</h4>
+            <AnimateSharedLayout>
+                <Toggle title="Who I Am?">
+
+
                     <div className="answer">
                         <p>Lorem ipsum dolor sit amet.</p>
 
@@ -19,29 +21,33 @@ const MySkills = () => {
                         </p>
 
                     </div>
-                    <div className="service-line"></div>
-                </div>
-            </Toggle>
-            <div className="question">
-                <h4>Responsive Design</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laborum!
-                </p>
-                </div>
-            </div>
-            <div className="question">
-                <h4>Full stack Development</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laborum!
-                </p>
-                </div>
-                <div className="service-line"></div>
-            </div>
 
+
+                </Toggle>
+                <Toggle title="Responsive Design">
+
+
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laborum!
+                </p>
+                    </div>
+
+                </Toggle>
+                <Toggle title="Full stack Development">
+
+
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laborum!
+                </p>
+                    </div>
+
+
+                </Toggle>
+            </AnimateSharedLayout>
         </Service>
     )
 };
