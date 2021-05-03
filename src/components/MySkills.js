@@ -1,21 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components";
 import { About } from "../styles";
+import Toggle from './Toggle';
 
 const MySkills = () => {
+
     return (
         <Service>
             <h2>See what <span>I can do</span></h2>
-            <div className="question">
-                <h4>Who I Am?</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laborum!
-                </p>
+            <Toggle>
+                <div className="question">
+                    <h4>Who I Am?</h4>
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laborum!
+                        </p>
+
+                    </div>
+                    <div className="service-line"></div>
                 </div>
-                <div className="service-line"></div>
-            </div>
+            </Toggle>
             <div className="question">
                 <h4>Responsive Design</h4>
                 <div className="answer">
