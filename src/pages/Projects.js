@@ -8,9 +8,20 @@ import sport from '../img/sport.png';
 import videogame from '../img/videogame.jpg';
 // Animation
 import { motion } from 'framer-motion';
-import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } from '../animation';
+import {
+    pageAnimation,
+    fade,
+    photoAnim,
+    lineAnim,
+    slider,
+    sliderContainer,
+} from '../animation';
+import { useScroll } from '../components/useScroll';
 
 const Projects = () => {
+    const [element, controls] = useScroll();
+    const [element2, controls2] = useScroll();
+    const [element3, controls3] = useScroll();
     return (
         <Work
             style={{ background: "#fff" }}
@@ -34,25 +45,39 @@ const Projects = () => {
                     </Hide>
                 </Link>
             </Website>
-            <Website>
+            <Website
+                ref={element}
+                variants={fade}
+                animate={controls}
+                initial="hidden">
                 <h2>Hiking Tour</h2>
-                <div className="line"></div>
+                <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/projects/tour">
-                    <img src={tour} alt="tour" />
+                    <motion.img variants={photoAnim} src={tour} alt="tour" />
                 </Link>
             </Website>
-            <Website>
-                <h2>Sport News</h2>
-                <div className="line"></div>
+            <Website
+                ref={element2}
+                variants={fade}
+                animate={controls2}
+                initial="hidden"
+            >
+                <motion.h2 variants={fade}>Sport News</motion.h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/projects/sport-news">
-                    <img src={sport} alt="sport-news" />
+                    <motion.img variants={photoAnim} src={sport} alt="sport-news" />
                 </Link>
             </Website>
-            <Website>
-                <h2>Videogame Quizzes</h2>
-                <div className="line"></div>
+            <Website
+                ref={element3}
+                variants={fade}
+                animate={controls3}
+                initial="hidden"
+            >
+                <motion.h2 variants={fade}>Videogame Quizzes</motion.h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/projects/videogames">
-                    <img src={videogame} alt="videogame" />
+                    <motion.img variants={photoAnim} src={videogame} alt="videogame" />
                 </Link>
             </Website>
         </Work>
@@ -68,7 +93,7 @@ const Work = styled(motion.div)`
     }
 `;
 
-const Website = styled.div`
+const Website = styled(motion.div)`
     padding-bottom: 10rem;
     .line {
         height: 0.5rem;
