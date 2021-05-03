@@ -8,7 +8,7 @@ import sport from '../img/sport.png';
 import videogame from '../img/videogame.jpg';
 // Animation
 import { motion } from 'framer-motion';
-import { pageAnimation } from '../animation';
+import { pageAnimation, fade, photoAnim, lineAnim, slider } from '../animation';
 
 const Projects = () => {
     return (
@@ -19,11 +19,17 @@ const Projects = () => {
             initial="hidden"
             animate="show"
         >
+            <Frame1 variants={slider}></Frame1>
+            <Frame2 variants={slider}></Frame2>
+            <Frame3 variants={slider}></Frame3>
+            <Frame4 variants={slider}></Frame4>
             <Website>
-                <h2>Super Mario</h2>
-                <div className="line"></div>
+                <motion.h2 variants={fade}>Super Mario</motion.h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/projects/supermario">
-                    <img src={mario} alt="supermario" />
+                    <Hide>
+                        <motion.img variants={photoAnim} src={mario} alt="supermario" />
+                    </Hide>
                 </Link>
             </Website>
             <Website>
@@ -73,5 +79,35 @@ const Website = styled.div`
         object-fit: cover;
     }
 `;
+
+const Hide = styled.div`
+    overflow: hidden;
+`;
+
+//Frame Animation
+const Frame1 = styled(motion.div)`
+    position: fixed;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    height: 100vh;
+    background: #fffebf;
+    z-index: 2;
+`;
+
+const Frame2 = styled(Frame1)`
+    background: #044DF6;
+`;
+
+const Frame3 = styled(Frame1)`
+    background: #F39F00;
+`;
+
+const Frame4 = styled(Frame1)`
+    background: #1a1919;
+`;
+
+
+
 
 export default Projects;
