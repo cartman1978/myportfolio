@@ -15,6 +15,7 @@ import html from '../img/html.png';
 import css from '../img/css.png';
 import sass from '../img/sass.png';
 import js from '../img/javascript.png';
+import reactImg from '../img/react.png';
 
 
 
@@ -132,6 +133,29 @@ const ServicesSection = () => {
                                 </ListItemAvatar>
                                 <ListItemText
                                     primary="Javascript"
+                                    secondary={
+
+                                        <Typography
+                                            component="span"
+                                            variant="body2"
+                                            className={classes.inline}
+                                            color="textPrimary"
+                                        >
+
+                                        </Typography>
+
+
+                                    }
+                                />
+                            </ListItem>
+
+                            <ListItem alignItems="flex-start">
+                                <ListItemAvatar>
+
+                                    <img src={reactImg} alt="javascript" />
+                                </ListItemAvatar>
+                                <ListItemText
+                                    primary="React"
                                     secondary={
 
                                         <Typography
