@@ -2,10 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import Divider from '@material-ui/core/Divider';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 
 
@@ -16,7 +14,7 @@ import web from '../img/web.jpg';
 import html from '../img/html.png';
 import css from '../img/css.png';
 import sass from '../img/sass.png';
-
+import js from '../img/javascript.png';
 
 
 
@@ -112,6 +110,28 @@ const ServicesSection = () => {
                                 </ListItemAvatar>
                                 <ListItemText
                                     primary="Sass"
+                                    secondary={
+
+                                        <Typography
+                                            component="span"
+                                            variant="body2"
+                                            className={classes.inline}
+                                            color="textPrimary"
+                                        >
+
+                                        </Typography>
+
+
+                                    }
+                                />
+                            </ListItem>
+                            <ListItem alignItems="flex-start">
+                                <ListItemAvatar>
+
+                                    <img src={js} alt="javascript" />
+                                </ListItemAvatar>
+                                <ListItemText
+                                    primary="Javascript"
                                     secondary={
 
                                         <Typography
