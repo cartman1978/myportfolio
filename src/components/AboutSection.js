@@ -31,7 +31,7 @@ const AboutSection = () => {
                     </Hide>
                 </motion.div>
                 <motion.p variants={fade}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, unde! Dolorem quod nam qui deserunt odit consequuntur accusamus veritatis sed?</motion.p>
+                    Contact me if you need help in creating amazing website.</motion.p>
                 <motion.button variants={fade}>Contact</motion.button>
             </Description>
             <Image>
