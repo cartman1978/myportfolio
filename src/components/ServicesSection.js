@@ -18,6 +18,8 @@ import css from '../img/css.png';
 import sass from '../img/sass.png';
 
 
+
+
 // Styles
 import { About, Description, Image } from "../styles";
 import styled from 'styled-components';
@@ -103,25 +105,25 @@ const ServicesSection = () => {
                                     }
                                 />
                             </ListItem>
-                            <Divider variant="inset" component="li" />
+
                             <ListItem alignItems="flex-start">
                                 <ListItemAvatar>
-                                    <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+                                    <img src={sass} alt="sass" />
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="Oui Oui"
+                                    primary="Sass"
                                     secondary={
-                                        <React.Fragment>
-                                            <Typography
-                                                component="span"
-                                                variant="body2"
-                                                className={classes.inline}
-                                                color="textPrimary"
-                                            >
-                                                Sandra Adams
-                                    </Typography>
-                                            {' — Do you have Paris recommendations? Have you ever…'}
-                                        </React.Fragment>
+
+                                        <Typography
+                                            component="span"
+                                            variant="body2"
+                                            className={classes.inline}
+                                            color="textPrimary"
+                                        >
+
+                                        </Typography>
+
+
                                     }
                                 />
                             </ListItem>
@@ -139,10 +141,16 @@ const ServicesSection = () => {
                         <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                 </Cards>
+
+
+
             </Description>
             <Image>
                 <img src={web} alt="web" />
             </Image>
+
+
+
 
         </Skills>
 
