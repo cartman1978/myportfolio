@@ -41,13 +41,15 @@ const StyledNav = styled.nav`
     min-height: 10vh;
     display: flex;
     margin: auto;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 10rem;
     background: #282828;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 10;
+   
     a {
         color: #fff;
         text-decoration: none;
