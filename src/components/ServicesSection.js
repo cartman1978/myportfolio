@@ -27,7 +27,7 @@ import django from '../img/django.png';
 
 
 // Styles
-import { About, Description, Image } from "../styles";
+import { About, Description, ImageSkill } from "../styles";
 import styled from 'styled-components';
 import { scrollReveal } from '../animation';
 import { useScroll } from './useScroll';
@@ -346,9 +346,9 @@ const ServicesSection = () => {
 
 
             </Description>
-            <Image>
+            <ImageSkill>
                 <img className="web" src={web} alt="web" />
-            </Image>
+            </ImageSkill>
 
 
 

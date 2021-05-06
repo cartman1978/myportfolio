@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         background: #5959f2;
         font-family: 'Poppins', sans-serif;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     html {
@@ -19,8 +19,9 @@ const GlobalStyle = createGlobalStyle`
         @media (max-width: 1700px) {
             font-size: 75%;
         }
-    
     }
+
+
 
     button {
         font-weight: bold;
