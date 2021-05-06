@@ -204,36 +204,42 @@ const ServicesSection = () => {
                         {/* second card*/}
 
                     </Card>
+
+
                     <Card>
                         <div className="icon">
                             <img src={backend} alt="backend" />
                             <h3> Backend</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
-                        <List className={classes.root} >
-                            <ListItem alignItems="center">
-                                <ListItemAvatar>
+                        <Grid container spacing={2}>
+                            <Grid item xs={12} md={6}>
+                                <List className={classes.root} >
+                                    <ListItem alignItems="center">
+                                        <ListItemAvatar>
 
-                                    <img src={bootstrap} alt="bootstrap" />
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="Bootstrap"
-                                    secondary={
+                                            <img src={bootstrap} alt="bootstrap" />
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Bootstrap"
+                                            secondary={
 
-                                        <Typography
-                                            component="span"
-                                            variant="body2"
-                                            className={classes.inline}
-                                            color="textPrimary"
-                                        >
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
 
-                                        </Typography>
+                                                </Typography>
 
 
-                                    }
-                                />
-                            </ListItem>
-                        </List>
+                                            }
+                                        />
+                                    </ListItem>
+                                </List>
+                            </Grid>
+                        </Grid>
                     </Card>
 
 
