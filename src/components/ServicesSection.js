@@ -65,7 +65,7 @@ const ServicesSection = () => {
 
                         <Grid container spacing={2} justify='center'>
                             <Grid item xs={12} md={6} >
-                                <List className={classes.root}>
+                                <List className={classes.root} style={{ height: '350px' }}>
                                     <ListItem alignItems="flex-start">
                                         <ListItemAvatar>
 
@@ -219,7 +219,7 @@ const ServicesSection = () => {
 
                         <Grid container spacing={2} justify='center'>
                             <Grid item xs={12} md={6}>
-                                <List className={classes.root} >
+                                <List className={classes.root} style={{ height: '350px' }} >
                                     <ListItem alignItems="center">
                                         <ListItemAvatar>
 
@@ -390,7 +390,7 @@ const Card = styled.div`
     .icon {
         display: flex;
         align-items: center;
-        margin: 3rem;
+        margin: 4rem;
     }
     h3 {
         background: #fff;
