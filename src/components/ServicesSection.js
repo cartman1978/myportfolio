@@ -18,6 +18,10 @@ import sass from '../img/sass.png';
 import js from '../img/javascript.png';
 import reactImg from '../img/react.png';
 import bootstrap from '../img/bootstrap.png';
+import python from '../img/python.png';
+import mongodb from '../img/mongodb.png';
+import nodejs from '../img/node-js.png';
+import mysql from '../img/mysql.png';
 
 
 
@@ -237,6 +241,99 @@ const ServicesSection = () => {
                                             }
                                         />
                                     </ListItem>
+
+                                    <ListItem alignItems="center">
+                                        <ListItemAvatar>
+
+                                            <img src={python} alt="python" />
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Bootstrap"
+                                            secondary={
+
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
+
+                                                </Typography>
+
+
+                                            }
+                                        />
+                                    </ListItem>
+
+                                    <ListItem alignItems="center">
+                                        <ListItemAvatar>
+
+                                            <img src={mongodb} alt="mongoDb" />
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Bootstrap"
+                                            secondary={
+
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
+
+                                                </Typography>
+
+
+                                            }
+                                        />
+                                    </ListItem>
+
+                                    <ListItem alignItems="center">
+                                        <ListItemAvatar>
+
+                                            <img src={nodejs} alt="node" />
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Bootstrap"
+                                            secondary={
+
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
+
+                                                </Typography>
+
+
+                                            }
+                                        />
+                                    </ListItem>
+
+                                    <ListItem alignItems="center">
+                                        <ListItemAvatar>
+
+                                            <img src={mysql} alt="mysql" />
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Bootstrap"
+                                            secondary={
+
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
+
+                                                </Typography>
+
+
+                                            }
+                                        />
+                                    </ListItem>
+
                                 </List>
                             </Grid>
                         </Grid>
