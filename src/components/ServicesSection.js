@@ -5,7 +5,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import Grid from '@material-ui/core/Grid';
 
 
 // Import Icons
@@ -58,148 +58,150 @@ const ServicesSection = () => {
                             <h3> Frontend</h3>
                         </div>
                         <p>I like to code things from scratch, and bringing ideas to life in the browser.</p>
+                        <Grid container spacing={2}>
+                            <Grid item xs={12} md={6}>
+                                <List className={classes.root}>
+                                    <ListItem alignItems="flex-start">
+                                        <ListItemAvatar>
 
-                        <List className={classes.root}>
-                            <ListItem alignItems="flex-start">
-                                <ListItemAvatar>
+                                            <img src={html} alt="frontend" />
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="HTML"
+                                            secondary={
 
-                                    <img src={html} alt="frontend" />
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="HTML"
-                                    secondary={
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
 
-                                        <Typography
-                                            component="span"
-                                            variant="body2"
-                                            className={classes.inline}
-                                            color="textPrimary"
-                                        >
-
-                                        </Typography>
-
-
-                                    }
-                                />
-                            </ListItem>
-
-                            <ListItem alignItems="flex-start">
-                                <ListItemAvatar>
-
-                                    <img src={css} alt="css" />
-
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="CSS"
-                                    secondary={
-
-                                        <Typography
-                                            component="span"
-                                            variant="body2"
-                                            className={classes.inline}
-                                            color="textPrimary"
-                                        >
-
-                                        </Typography>
+                                                </Typography>
 
 
-                                    }
-                                />
-                            </ListItem>
+                                            }
+                                        />
+                                    </ListItem>
 
-                            <ListItem alignItems="flex-start">
-                                <ListItemAvatar>
-                                    <img src={sass} alt="sass" />
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="Sass"
-                                    secondary={
+                                    <ListItem alignItems="flex-start">
+                                        <ListItemAvatar>
 
-                                        <Typography
-                                            component="span"
-                                            variant="body2"
-                                            className={classes.inline}
-                                            color="textPrimary"
-                                        >
+                                            <img src={css} alt="css" />
 
-                                        </Typography>
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="CSS"
+                                            secondary={
 
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
 
-                                    }
-                                />
-                            </ListItem>
-                            <ListItem alignItems="flex-start">
-                                <ListItemAvatar>
-
-                                    <img src={js} alt="javascript" />
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="Javascript"
-                                    secondary={
-
-                                        <Typography
-                                            component="span"
-                                            variant="body2"
-                                            className={classes.inline}
-                                            color="textPrimary"
-                                        >
-
-                                        </Typography>
+                                                </Typography>
 
 
-                                    }
-                                />
-                            </ListItem>
+                                            }
+                                        />
+                                    </ListItem>
 
-                            <ListItem alignItems="flex-start">
-                                <ListItemAvatar>
+                                    <ListItem alignItems="flex-start">
+                                        <ListItemAvatar>
+                                            <img src={sass} alt="sass" />
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Sass"
+                                            secondary={
 
-                                    <img src={reactImg} alt="javascript" />
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="React.js"
-                                    secondary={
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
 
-                                        <Typography
-                                            component="span"
-                                            variant="body2"
-                                            className={classes.inline}
-                                            color="textPrimary"
-                                        >
-
-                                        </Typography>
-
-
-                                    }
-                                />
-                            </ListItem>
-
-                            <ListItem alignItems="flex-start">
-                                <ListItemAvatar>
-
-                                    <img src={bootstrap} alt="bootstrap" />
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="Bootstrap"
-                                    secondary={
-
-                                        <Typography
-                                            component="span"
-                                            variant="body2"
-                                            className={classes.inline}
-                                            color="textPrimary"
-                                        >
-
-                                        </Typography>
+                                                </Typography>
 
 
-                                    }
-                                />
-                            </ListItem>
-                        </List>
+                                            }
+                                        />
+                                    </ListItem>
+                                    <ListItem alignItems="flex-start">
+                                        <ListItemAvatar>
+
+                                            <img src={js} alt="javascript" />
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Javascript"
+                                            secondary={
+
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
+
+                                                </Typography>
 
 
+                                            }
+                                        />
+                                    </ListItem>
 
+                                    <ListItem alignItems="flex-start">
+                                        <ListItemAvatar>
+
+                                            <img src={reactImg} alt="javascript" />
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="React.js"
+                                            secondary={
+
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
+
+                                                </Typography>
+
+
+                                            }
+                                        />
+                                    </ListItem>
+
+                                    <ListItem alignItems="flex-start">
+                                        <ListItemAvatar>
+
+                                            <img src={bootstrap} alt="bootstrap" />
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Bootstrap"
+                                            secondary={
+
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
+
+                                                </Typography>
+
+
+                                            }
+                                        />
+                                    </ListItem>
+                                </List>
+                            </Grid>
+                        </Grid>
+
+                        {/* second card*/}
 
                     </Card>
                     <Card>
