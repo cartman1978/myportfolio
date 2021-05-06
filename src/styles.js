@@ -41,6 +41,9 @@ export const Image = styled.div`
         @media (max-width: 375px) {
             display: none;
         }
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
     
 `;
