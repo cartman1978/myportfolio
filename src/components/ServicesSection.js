@@ -22,6 +22,7 @@ import python from '../img/python.png';
 import mongodb from '../img/mongodb.png';
 import nodejs from '../img/node-js.png';
 import mysql from '../img/mysql.png';
+import django from '../img/django.png';
 
 
 
@@ -62,8 +63,8 @@ const ServicesSection = () => {
                             <h3> Frontend</h3>
                         </div>
 
-                        <Grid container spacing={2}>
-                            <Grid item xs={12} md={6}>
+                        <Grid container spacing={2} justify='center'>
+                            <Grid item xs={12} md={6} >
                                 <List className={classes.root}>
                                     <ListItem alignItems="flex-start">
                                         <ListItemAvatar>
@@ -216,16 +217,16 @@ const ServicesSection = () => {
                             <h3> Backend</h3>
                         </div>
 
-                        <Grid container spacing={2}>
+                        <Grid container spacing={2} justify='center'>
                             <Grid item xs={12} md={6}>
                                 <List className={classes.root} >
                                     <ListItem alignItems="center">
                                         <ListItemAvatar>
 
-                                            <img src={bootstrap} alt="bootstrap" />
+                                            <img src={django} alt="django" />
                                         </ListItemAvatar>
                                         <ListItemText
-                                            primary="Bootstrap"
+                                            primary="Django"
                                             secondary={
 
                                                 <Typography
@@ -248,7 +249,7 @@ const ServicesSection = () => {
                                             <img src={python} alt="python" />
                                         </ListItemAvatar>
                                         <ListItemText
-                                            primary="Bootstrap"
+                                            primary="Python"
                                             secondary={
 
                                                 <Typography
@@ -271,7 +272,7 @@ const ServicesSection = () => {
                                             <img src={mongodb} alt="mongoDb" />
                                         </ListItemAvatar>
                                         <ListItemText
-                                            primary="Bootstrap"
+                                            primary="MongoDb"
                                             secondary={
 
                                                 <Typography
@@ -294,7 +295,7 @@ const ServicesSection = () => {
                                             <img src={nodejs} alt="node" />
                                         </ListItemAvatar>
                                         <ListItemText
-                                            primary="Bootstrap"
+                                            primary="Node.js"
                                             secondary={
 
                                                 <Typography
@@ -317,7 +318,7 @@ const ServicesSection = () => {
                                             <img src={mysql} alt="mysql" />
                                         </ListItemAvatar>
                                         <ListItemText
-                                            primary="Bootstrap"
+                                            primary="MySql"
                                             secondary={
 
                                                 <Typography
