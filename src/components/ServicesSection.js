@@ -5,6 +5,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
 
 
 // Import Icons
@@ -16,6 +17,7 @@ import css from '../img/css.png';
 import sass from '../img/sass.png';
 import js from '../img/javascript.png';
 import reactImg from '../img/react.png';
+import bootstrap from '../img/bootstrap.png';
 
 
 
@@ -155,7 +157,30 @@ const ServicesSection = () => {
                                     <img src={reactImg} alt="javascript" />
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="React"
+                                    primary="React.js"
+                                    secondary={
+
+                                        <Typography
+                                            component="span"
+                                            variant="body2"
+                                            className={classes.inline}
+                                            color="textPrimary"
+                                        >
+
+                                        </Typography>
+
+
+                                    }
+                                />
+                            </ListItem>
+
+                            <ListItem alignItems="flex-start">
+                                <ListItemAvatar>
+
+                                    <img src={bootstrap} alt="bootstrap" />
+                                </ListItemAvatar>
+                                <ListItemText
+                                    primary="Bootstrap"
                                     secondary={
 
                                         <Typography
@@ -183,7 +208,33 @@ const ServicesSection = () => {
                             <h3> Backend</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
+                        <List className={classes.root} >
+                            <ListItem alignItems="center">
+                                <ListItemAvatar>
+
+                                    <img src={bootstrap} alt="bootstrap" />
+                                </ListItemAvatar>
+                                <ListItemText
+                                    primary="Bootstrap"
+                                    secondary={
+
+                                        <Typography
+                                            component="span"
+                                            variant="body2"
+                                            className={classes.inline}
+                                            color="textPrimary"
+                                        >
+
+                                        </Typography>
+
+
+                                    }
+                                />
+                            </ListItem>
+                        </List>
                     </Card>
+
+
                 </Cards>
 
 
@@ -229,7 +280,7 @@ const Cards = styled.div`
 `;
 
 const Card = styled.div`
-    flex-basis: 20rem;
+    flex-basis: 22rem;
     .icon {
         display: flex;
         align-items: center;
@@ -241,6 +292,8 @@ const Card = styled.div`
         padding: 1rem;
     }
 `;
+
+
 
 
 
