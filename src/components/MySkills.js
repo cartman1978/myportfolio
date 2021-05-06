@@ -35,10 +35,8 @@ const MySkills = () => {
 
 
                     <div className="answer">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laborum!
-                </p>
+                        <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
                     </div>
 
                 </Toggle>
