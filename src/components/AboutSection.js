@@ -31,6 +31,7 @@ const AboutSection = () => {
                     </Hide>
                 </motion.div>
                 <motion.p variants={fade}>
+                    I like to code things from scratch, and bringing ideas to life in the browser.
                     Contact me if you need help in creating amazing website.</motion.p>
                 <motion.button variants={fade}>Contact</motion.button>
             </Description>

@@ -61,7 +61,7 @@ const ServicesSection = () => {
                             <img src={webdesign} alt="frontend" />
                             <h3> Frontend</h3>
                         </div>
-                        <p>I like to code things from scratch, and bringing ideas to life in the browser.</p>
+
                         <Grid container spacing={2}>
                             <Grid item xs={12} md={6}>
                                 <List className={classes.root}>
@@ -215,7 +215,7 @@ const ServicesSection = () => {
                             <img src={backend} alt="backend" />
                             <h3> Backend</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+
                         <Grid container spacing={2}>
                             <Grid item xs={12} md={6}>
                                 <List className={classes.root} >
@@ -389,6 +389,7 @@ const Card = styled.div`
     .icon {
         display: flex;
         align-items: center;
+        margin: 3rem;
     }
     h3 {
         background: #fff;
