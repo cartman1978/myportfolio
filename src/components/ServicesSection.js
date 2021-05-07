@@ -208,9 +208,141 @@ const ServicesSection = () => {
                             </Grid>
                         </Grid>
 
-                        {/* second card*/}
+
 
                     </Card>
+
+                    {/* second card*/}
+                    <Card>
+
+
+                        <Grid container spacing={2} justify='center'>
+                            <Grid item xs={12} md={6} >
+                                <div className="icon">
+                                    <img src={backend} alt="backend" />
+                                    <h3> Backend</h3>
+                                </div>
+                                <List id="grid-container" className={classes.root} style={{ height: '330px' }} >
+                                    <ListItem alignItems="center">
+                                        <ListItemAvatar>
+
+                                            <img src={django} alt="django" />
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Django"
+                                            secondary={
+
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
+
+                                                </Typography>
+
+
+                                            }
+                                        />
+                                    </ListItem>
+
+                                    <ListItem alignItems="center">
+                                        <ListItemAvatar>
+
+                                            <img src={python} alt="python" />
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Python"
+                                            secondary={
+
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
+
+                                                </Typography>
+
+
+                                            }
+                                        />
+                                    </ListItem>
+
+                                    <ListItem alignItems="center">
+                                        <ListItemAvatar>
+
+                                            <img src={mongodb} alt="mongoDb" />
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="MongoDb"
+                                            secondary={
+
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
+
+                                                </Typography>
+
+
+                                            }
+                                        />
+                                    </ListItem>
+
+                                    <ListItem alignItems="center">
+                                        <ListItemAvatar>
+
+                                            <img src={nodejs} alt="node" />
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Node.js"
+                                            secondary={
+
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
+
+                                                </Typography>
+
+
+                                            }
+                                        />
+                                    </ListItem>
+
+                                    <ListItem alignItems="center">
+                                        <ListItemAvatar>
+
+                                            <img src={mysql} alt="mysql" />
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="MySql"
+                                            secondary={
+
+                                                <Typography
+                                                    component="span"
+                                                    variant="body2"
+                                                    className={classes.inline}
+                                                    color="textPrimary"
+                                                >
+
+                                                </Typography>
+
+
+                                            }
+                                        />
+                                    </ListItem>
+
+                                </List>
+                            </Grid>
+                        </Grid>
+                    </Card>
+
 
 
                     <Card>
