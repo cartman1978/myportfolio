@@ -38,28 +38,28 @@ export const Image = styled.div`
         width: 100%;
         height: 80vh;
         object-fit: cover;
-       
+    
     }
     
 `;
 
-export const ImageSkill = styled.div`
-    z-index: 2;
-    flex: 1;
-    overflow: hidden;
-    img {
-        width: 100%;
-        height: 80vh;
-        object-fit: cover;
-        @media (max-width: 375px) {
-            display: none;
-        }
-        @media (max-width: 768px) {
-            display: none;
-        }
-    }
-    
-`;
+// export const ImageSkill = styled.div`
+//     z-index: 2;
+//     flex: 1;
+//     overflow: hidden;
+//     img {
+//         width: 100%;
+//         height: 80vh;
+//         object-fit: cover;
+//         @media (max-width: 375px) {
+//             display: none;
+//         }
+//         @media (max-width: 768px) {
+//             display: none;
+//         }
+//     }
+
+// `;
 
 export const Hide = styled.div`
     overflow: hidden;

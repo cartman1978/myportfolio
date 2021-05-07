@@ -58,13 +58,14 @@ const ServicesSection = () => {
                 <h2>My <span>skills</span></h2>
                 <Cards>
                     <Card>
-                        <div className="icon">
-                            <img src={webdesign} alt="frontend" />
-                            <h3> Frontend</h3>
-                        </div>
+
 
                         <Grid container spacing={2} justify='center'>
                             <Grid item xs={12} md={6} >
+                                <div className="icon">
+                                    <img src={webdesign} alt="frontend" />
+                                    <h3> Frontend</h3>
+                                </div>
                                 <List id="grid-container" className={classes.root} style={{ height: '330px' }} >
                                     <ListItem alignItems="flex-start">
                                         <ListItemAvatar>
@@ -213,13 +214,14 @@ const ServicesSection = () => {
 
 
                     <Card>
-                        <div className="icon">
-                            <img src={backend} alt="backend" />
-                            <h3> Backend</h3>
-                        </div>
+
 
                         <Grid container spacing={2} justify='center'>
                             <Grid item xs={12} md={6} >
+                                <div className="icon">
+                                    <img src={backend} alt="backend" />
+                                    <h3> Backend</h3>
+                                </div>
                                 <List id="grid-container" className={classes.root} style={{ height: '330px' }} >
                                     <ListItem alignItems="center">
                                         <ListItemAvatar>
@@ -347,9 +349,9 @@ const ServicesSection = () => {
 
 
             </Description>
-            <ImageSkill>
+            {/* <ImageSkill>
                 <img className="web" src={web} alt="web" />
-            </ImageSkill>
+            </ImageSkill> */}
 
 
 
@@ -391,7 +393,7 @@ const Card = styled.div`
     .icon {
         display: flex;
         align-items: center;
-        margin: 4rem;
+        margin: 1rem;
         
     }
 
