@@ -17,6 +17,19 @@
     }
 }
 
+@media (min-width: 1400px) {
+    #grid-container {
+        width: 250px;
+        margin-left: -3rem;
+    }
+}
+
+@media (min-width: 1700px) {
+    #grid-container {
+        width: 250px;
+    }
+}
+
 /* Change color on hover */
 
 .bm-item:hover {

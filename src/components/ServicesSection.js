@@ -219,7 +219,7 @@ const ServicesSection = () => {
                         </div>
 
                         <Grid container spacing={2} justify='center'>
-                            <Grid item xs={12} md={6}>
+                            <Grid item xs={12} md={6} >
                                 <List id="grid-container" className={classes.root} style={{ height: '330px' }} >
                                     <ListItem alignItems="center">
                                         <ListItemAvatar>

@@ -10,7 +10,7 @@ export const About = styled(motion.div)`
     color: white;
     @media (max-width: 1300px) {
             display: block;
-            padding: 2rem 2rem;
+            padding: 12rem 2rem;
             text-align: center;
         }
 `;
