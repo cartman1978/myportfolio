@@ -13,6 +13,7 @@ import ProjectDetails from './pages/ProjectDetails';
 import { Switch, Route, useLocation } from "react-router-dom";
 // Animation
 import { AnimatePresence } from 'framer-motion';
+import MobNav from './components/MobNav';
 // Navigation
 
 
@@ -22,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-
+      <MobNav />
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>

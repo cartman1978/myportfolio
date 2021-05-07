@@ -11,7 +11,32 @@ const MobNav = (props) => {
         <Menu {...props}>
             <ul>
                 <li>
-
+                    <Link to="/">About Me</Link>
+                    <Line
+                        transition={{ duration: 0.75 }}
+                        initial={{ width: "0%" }}
+                        animate={{ width: pathname === "/" ? "50%" : "0%" }}
+                    />
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <Link to="/work">My Work</Link>
+                    <Line
+                        transition={{ duration: 0.75 }}
+                        initial={{ width: "0%" }}
+                        animate={{ width: pathname === "/work" ? "50%" : "0%" }}
+                    />
+                </li>
+            </ul>
+            <ul>
+                <li id="prova">
+                    <Link to="/contact">Contact Me</Link>
+                    <Line
+                        transition={{ duration: 0.75 }}
+                        initial={{ width: "0%" }}
+                        animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
+                    />
                 </li>
             </ul>
 
@@ -19,7 +44,19 @@ const MobNav = (props) => {
 
 
     )
-}
+};
+
+const Line = styled(motion.div)`
+    height: 0.2rem;
+    background:  #FF8C00;
+    width: 10%;
+    position: absolute;
+    bottom: -20%;
+    left: 60%;
+    @media (max-width: 1300px) {
+        left: 13%;
+    }
+`;
 
 export default MobNav;
 
