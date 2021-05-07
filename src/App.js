@@ -1,6 +1,8 @@
 import React from "react";
 // Global  Style
 import GlobalStyle from "./components/GlobalStyle";
+
+
 // Import Pages
 import AboutMe from "./pages/AboutMe";
 import Nav from "./components/Nav";
@@ -11,6 +13,8 @@ import ProjectDetails from './pages/ProjectDetails';
 import { Switch, Route, useLocation } from "react-router-dom";
 // Animation
 import { AnimatePresence } from 'framer-motion';
+// Navigation
+
 
 
 function App() {
