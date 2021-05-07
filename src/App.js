@@ -14,7 +14,8 @@ import { Switch, Route, useLocation } from "react-router-dom";
 // Animation
 import { AnimatePresence } from 'framer-motion';
 import MobNav from './components/MobNav';
-// Navigation
+import './styles.css';
+
 
 
 
@@ -23,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <MobNav />
+      <MobNav pageWrapId={"page-wrap"} outerContainerId={"App"} />
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>

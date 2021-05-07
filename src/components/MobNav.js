@@ -9,8 +9,8 @@ const MobNav = (props) => {
     const { pathname } = useLocation();
     return (
         <Menu {...props}>
-            <ul>
-                <li>
+            <ul id="navItem">
+                <li id="navList">
                     <Link to="/">About Me</Link>
                     <Line
                         transition={{ duration: 0.75 }}
@@ -19,8 +19,8 @@ const MobNav = (props) => {
                     />
                 </li>
             </ul>
-            <ul>
-                <li>
+            <ul id="navItem">
+                <li id="navList">
                     <Link to="/work">My Work</Link>
                     <Line
                         transition={{ duration: 0.75 }}
@@ -29,8 +29,8 @@ const MobNav = (props) => {
                     />
                 </li>
             </ul>
-            <ul>
-                <li id="prova">
+            <ul id="navItem">
+                <li id="navList">
                     <Link to="/contact">Contact Me</Link>
                     <Line
                         transition={{ duration: 0.75 }}
