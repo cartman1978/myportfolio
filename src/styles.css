@@ -8,7 +8,7 @@
     transition: color 0.2s;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
     .bm-burger-button {
         display: none;
     }
@@ -27,8 +27,8 @@
 .bm-burger-button {
     position: fixed;
     width: 40px;
-    height: 30px;
-    left: 32px;
+    height: 25px;
+    left: 22px;
     top: 32px;
 }
 
