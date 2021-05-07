@@ -65,7 +65,7 @@ const ServicesSection = () => {
 
                         <Grid container spacing={2} justify='center'>
                             <Grid item xs={12} md={6} >
-                                <List className={classes.root} style={{ height: '330px' }} >
+                                <List id="grid-container" className={classes.root} style={{ height: '330px' }} >
                                     <ListItem alignItems="flex-start">
                                         <ListItemAvatar>
 
@@ -220,7 +220,7 @@ const ServicesSection = () => {
 
                         <Grid container spacing={2} justify='center'>
                             <Grid item xs={12} md={6}>
-                                <List className={classes.root} style={{ height: '330px' }} >
+                                <List id="grid-container" className={classes.root} style={{ height: '330px' }} >
                                     <ListItem alignItems="center">
                                         <ListItemAvatar>
 

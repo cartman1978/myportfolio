@@ -12,6 +12,9 @@
     .bm-burger-button {
         display: none;
     }
+    #grid-container {
+        width: 150px;
+    }
 }
 
 /* Change color on hover */
