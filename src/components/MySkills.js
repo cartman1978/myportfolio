@@ -17,16 +17,12 @@ const MySkills = () => {
         >
             <h2>See what <span>I can do</span></h2>
             <AnimateSharedLayout>
-                <Toggle title="Who I Am?">
+                <Toggle title="About Me">
 
 
                     <div className="answer">
-                        <p>Lorem ipsum dolor sit amet.</p>
-
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laborum!
-                        </p>
-
+                        <p>I love coding and making things, from wireframes to design to code. I cover every step of the process in getting a website launched.</p>
+                        <p>My goal is to build fast, mobile-first websites that clearly communicate with visitors.</p>
                     </div>
 
 
@@ -44,10 +40,14 @@ const MySkills = () => {
 
 
                     <div className="answer">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laborum!
-                </p>
+
+
+                        <p>Able to build interactive user interfaces with the help of HTML/CSS and JavaScript frameworks and libraries. </p>
+                        <p>Able to build a robust backend architecture to fetch data from the servers.</p>
+                        <p>Ensuring Cross Platform compatibility - Applications must run smoothly on all operating systems like Windows, MacOS, and Linux. </p>
+                        <p>API development - Depending on the application architecture, I'm responsible for API creation. These APIs perform crucial tasks like fetching data from the server. </p>
+
+
                     </div>
 
 
