@@ -8,10 +8,9 @@ import Grid from '@material-ui/core/Grid';
 import Box from "@material-ui/core/Box";
 
 
-// Import Icons
+// Import Images
 import webdesign from '../img/webdesign.png';
 import backend from '../img/backend.png';
-import web from '../img/web.jpg';
 import html from '../img/html.png';
 import css from '../img/css.png';
 import sass from '../img/sass.png';
@@ -23,11 +22,17 @@ import mongodb from '../img/mongodb.png';
 import nodejs from '../img/node-js.png';
 import mysql from '../img/mysql.png';
 import django from '../img/django.png';
+import github from '../img/github.png';
+import npm from '../img/npm.png';
+import visual from '../img/visual.png';
+import heroku from '../img/heroku.png';
+import laptop from '../img/laptop.png';
+
 
 
 
 // Styles
-import { About, Description, ImageSkill } from "../styles";
+import { About, Description } from "../styles";
 import styled from 'styled-components';
 import { scrollReveal } from '../animation';
 import { useScroll } from './useScroll';
@@ -65,7 +70,7 @@ const ServicesSection = () => {
                             <img src={webdesign} alt="frontend" />
                             <h3> Frontend</h3>
                         </div>
-                        <Box bgcolor="primary.main" color="primary.contrastText" p={2}>
+                        <Box boxShadow={3} height="80%" bgcolor="#fff" color="primary.contrastText" p={2}>
                             <ListItem alignItems="flex-start">
                                 <ListItemAvatar>
                                     <img src={html} alt="frontend" />
@@ -176,7 +181,7 @@ const ServicesSection = () => {
                             <img src={backend} alt="frontend" />
                             <h3> Backend</h3>
                         </div>
-                        <Box bgcolor="error.main" color="info.main" p={2}>
+                        <Box boxShadow={3} height="80%" bgcolor="#fff" color="info.main" p={2}>
                             <ListItem alignItems="flex-start">
                                 <ListItemAvatar>
                                     <img src={python} alt="frontend" />
@@ -243,16 +248,39 @@ const ServicesSection = () => {
                                 />
                             </ListItem>
 
+                            <ListItem alignItems="flex-start">
+                                <ListItemAvatar>
+                                    <img src={mongodb} alt="mysql" />
+                                </ListItemAvatar>
+                                <ListItemText
+                                    primary="MongoDb"
+                                    secondary={
+                                        <Typography
+                                            component="span"
+                                            variant="body2"
+                                            className={classes.inline}
+                                            color="textPrimary"
+                                        ></Typography>
+                                    }
+                                />
+                            </ListItem>
+
                         </Box>
                     </Grid>
+
+
                     <Grid item xs={12} sm={4}>
-                        <Box bgcolor="primary.main" color="error.contrastText" p={2}>
+                        <div className="icon">
+                            <img src={laptop} alt="other" />
+                            <h3> Other</h3>
+                        </div>
+                        <Box boxShadow={3} height="80%" bgcolor="#fff" color="error.contrastText" p={2}>
                             <ListItem alignItems="flex-start">
                                 <ListItemAvatar>
-                                    <img src={html} alt="frontend" />
+                                    <img src={github} alt="github" />
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="HTML"
+                                    primary="GitHub"
                                     secondary={
                                         <Typography
                                             component="span"
@@ -265,10 +293,10 @@ const ServicesSection = () => {
                             </ListItem>
                             <ListItem alignItems="flex-start">
                                 <ListItemAvatar>
-                                    <img src={css} alt="frontend" />
+                                    <img src={npm} alt="npm" />
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="HTML"
+                                    primary="npm"
                                     secondary={
                                         <Typography
                                             component="span"
@@ -281,10 +309,27 @@ const ServicesSection = () => {
                             </ListItem>
                             <ListItem alignItems="flex-start">
                                 <ListItemAvatar>
-                                    <img src={reactImg} alt="frontend" />
+                                    <img src={visual} alt="vscode" />
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="HTML"
+                                    primary="Vs-Code"
+                                    secondary={
+                                        <Typography
+                                            component="span"
+                                            variant="body2"
+                                            className={classes.inline}
+                                            color="textPrimary"
+                                        ></Typography>
+                                    }
+                                />
+                            </ListItem>
+
+                            <ListItem alignItems="flex-start">
+                                <ListItemAvatar>
+                                    <img src={heroku} alt="heroku" />
+                                </ListItemAvatar>
+                                <ListItemText
+                                    primary="Heroku"
                                     secondary={
                                         <Typography
                                             component="span"
@@ -302,9 +347,7 @@ const ServicesSection = () => {
 
 
             </Description>
-            {/* <ImageSkill>
-                <img className="web" src={web} alt="web" />
-            </ImageSkill> */}
+
 
 
 
@@ -330,34 +373,6 @@ const Skills = styled(About)`
         padding: 2rem 0rem 4rem 0rem;
     }
 `;
-
-const Cards = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    @media (max-width: 1300px) {
-        justify-content: center;
-    }
-
-
-`;
-
-const Card = styled.div`
-    flex-basis: 22rem;
-    .icon {
-        display: flex;
-        align-items: center;
-        margin: 1rem;
-        
-    }
-
-    h3 {
-        background: #fff;
-        color: #000;
-        margin-left: 1rem;
-        padding: 1rem;
-    }
-`;
-
 
 
 
