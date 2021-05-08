@@ -3,6 +3,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { pageAnimation, titleAnim } from '../animation';
 import styled from 'styled-components';
+// Import Images
+import email from '../img/email.png';
 
 const Contact = () => {
     return (
@@ -21,7 +23,7 @@ const Contact = () => {
             <div>
                 <Hide>
                     <Social variants={titleAnim}>
-                        <Circle />
+                        <img src={email} alt="email" />
                         <h2>Send an Email</h2>
                     </Social>
                 </Hide>
