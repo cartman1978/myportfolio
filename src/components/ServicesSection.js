@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
@@ -87,7 +86,7 @@ const ServicesSection = () => {
                                     <img src={css} alt="frontend" />
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="HTML"
+                                    primary="CSS"
                                     secondary={
                                         <Typography
                                             component="span"
@@ -103,7 +102,7 @@ const ServicesSection = () => {
                                     <img src={reactImg} alt="frontend" />
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="HTML"
+                                    primary="React.js"
                                     secondary={
                                         <Typography
                                             component="span"
@@ -114,8 +113,59 @@ const ServicesSection = () => {
                                     }
                                 />
                             </ListItem>
-          primary.main
-        </Box>
+
+                            <ListItem alignItems="flex-start">
+                                <ListItemAvatar>
+                                    <img src={sass} alt="frontend" />
+                                </ListItemAvatar>
+                                <ListItemText
+                                    primary="Sass"
+                                    secondary={
+                                        <Typography
+                                            component="span"
+                                            variant="body2"
+                                            className={classes.inline}
+                                            color="textPrimary"
+                                        ></Typography>
+                                    }
+                                />
+                            </ListItem>
+
+                            <ListItem alignItems="flex-start">
+                                <ListItemAvatar>
+                                    <img src={js} alt="frontend" />
+                                </ListItemAvatar>
+                                <ListItemText
+                                    primary="Javascript"
+                                    secondary={
+                                        <Typography
+                                            component="span"
+                                            variant="body2"
+                                            className={classes.inline}
+                                            color="textPrimary"
+                                        ></Typography>
+                                    }
+                                />
+                            </ListItem>
+
+                            <ListItem alignItems="flex-start">
+                                <ListItemAvatar>
+                                    <img src={bootstrap} alt="frontend" />
+                                </ListItemAvatar>
+                                <ListItemText
+                                    primary="Bootstrap"
+                                    secondary={
+                                        <Typography
+                                            component="span"
+                                            variant="body2"
+                                            className={classes.inline}
+                                            color="textPrimary"
+                                        ></Typography>
+                                    }
+                                />
+                            </ListItem>
+
+                        </Box>
                     </Grid>
 
                     <Grid item xs={12} sm={4}>
@@ -168,8 +218,8 @@ const ServicesSection = () => {
                                     }
                                 />
                             </ListItem>
-          secondary.main
-        </Box>
+
+                        </Box>
                     </Grid>
                     <Grid item xs={12} sm={4}>
                         <Box bgcolor="error.main" color="error.contrastText" p={2}>
@@ -221,8 +271,8 @@ const ServicesSection = () => {
                                     }
                                 />
                             </ListItem>
-          error.main
-        </Box>
+
+                        </Box>
                     </Grid>
                 </Grid>
 
