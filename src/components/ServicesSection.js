@@ -57,13 +57,14 @@ const ServicesSection = () => {
             <Description>
                 <h2>My <span>skills</span></h2>
 
-                <div className="icon">
-                    <img src={webdesign} alt="frontend" />
-                    <h3> Frontend</h3>
-                </div>
+
 
                 <Grid container spacing={1}>
                     <Grid item xs={12} sm={4}>
+                        <div className="icon">
+                            <img src={webdesign} alt="frontend" />
+                            <h3> Frontend</h3>
+                        </div>
                         <Box bgcolor="primary.main" color="primary.contrastText" p={2}>
                             <ListItem alignItems="flex-start">
                                 <ListItemAvatar>
@@ -168,14 +169,20 @@ const ServicesSection = () => {
                         </Box>
                     </Grid>
 
+
+
                     <Grid item xs={12} sm={4}>
-                        <Box bgcolor="secondary.main" color="secondary.contrastText" p={2}>
+                        <div className="icon">
+                            <img src={backend} alt="frontend" />
+                            <h3> Backend</h3>
+                        </div>
+                        <Box bgcolor="error.main" color="info.main" p={2}>
                             <ListItem alignItems="flex-start">
                                 <ListItemAvatar>
-                                    <img src={html} alt="frontend" />
+                                    <img src={python} alt="frontend" />
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="HTML"
+                                    primary="Python"
                                     secondary={
                                         <Typography
                                             component="span"
@@ -188,10 +195,10 @@ const ServicesSection = () => {
                             </ListItem>
                             <ListItem alignItems="flex-start">
                                 <ListItemAvatar>
-                                    <img src={css} alt="frontend" />
+                                    <img src={django} alt="django" />
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="HTML"
+                                    primary="Django"
                                     secondary={
                                         <Typography
                                             component="span"
@@ -204,10 +211,27 @@ const ServicesSection = () => {
                             </ListItem>
                             <ListItem alignItems="flex-start">
                                 <ListItemAvatar>
-                                    <img src={reactImg} alt="frontend" />
+                                    <img src={nodejs} alt="nodejs" />
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="HTML"
+                                    primary="Node.js"
+                                    secondary={
+                                        <Typography
+                                            component="span"
+                                            variant="body2"
+                                            className={classes.inline}
+                                            color="textPrimary"
+                                        ></Typography>
+                                    }
+                                />
+                            </ListItem>
+
+                            <ListItem alignItems="flex-start">
+                                <ListItemAvatar>
+                                    <img src={mysql} alt="mysql" />
+                                </ListItemAvatar>
+                                <ListItemText
+                                    primary="MySql"
                                     secondary={
                                         <Typography
                                             component="span"
@@ -222,7 +246,7 @@ const ServicesSection = () => {
                         </Box>
                     </Grid>
                     <Grid item xs={12} sm={4}>
-                        <Box bgcolor="error.main" color="error.contrastText" p={2}>
+                        <Box bgcolor="primary.main" color="error.contrastText" p={2}>
                             <ListItem alignItems="flex-start">
                                 <ListItemAvatar>
                                     <img src={html} alt="frontend" />
