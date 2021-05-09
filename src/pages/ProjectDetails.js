@@ -40,8 +40,11 @@ const ProjectDetails = () => {
                                 description={award.description}
                                 key={award.title}
                             />
+
                         ))}
+                        <button><a href="/projects">Projects</a></button>
                     </Awards>
+
                 </Details>
             )}
         </>
@@ -50,6 +53,13 @@ const ProjectDetails = () => {
 
 const Details = styled(motion.div)`
     color: #fff;
+    button {
+        margin-top: 1rem;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
 `;
 
 const HeadLine = styled.div`
