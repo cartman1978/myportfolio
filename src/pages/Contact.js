@@ -86,6 +86,9 @@ const Social = styled(motion.div)`
     h2 {
         margin: 2rem;
     }
+    img {
+        cursor: pointer;
+    }
 `;
 
 export default Contact;

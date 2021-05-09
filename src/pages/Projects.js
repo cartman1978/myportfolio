@@ -99,6 +99,7 @@ const Work = styled(motion.div)`
 `;
 
 const Website = styled(motion.div)`
+    position: relative;
     padding-bottom: 10rem;
     .line {
         height: 0.5rem;
