@@ -5,6 +5,10 @@ import { projectState } from '../projectState';
 // Animation
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
+
+import { BsArrowLeft } from "react-icons/bs";
 
 const ProjectDetails = () => {
     const history = useHistory();
@@ -42,7 +46,11 @@ const ProjectDetails = () => {
                             />
 
                         ))}
-                        <button><a href="/projects">Projects</a></button>
+                        <button>
+
+
+                            <a href="/projects"> <BsArrowLeft /> </a>
+                        </button>
                     </Awards>
 
                 </Details>
