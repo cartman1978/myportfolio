@@ -5,6 +5,8 @@ import { pageAnimation, titleAnim } from '../animation';
 import styled from 'styled-components';
 // Import Images
 import email from '../img/email.png';
+import linkedin from '../img/linkedin.png';
+import twitter from '../img/twitter.png';
 
 const Contact = () => {
     return (
@@ -30,14 +32,14 @@ const Contact = () => {
 
                 <Hide>
                     <Social variants={titleAnim}>
-                        <Circle />
+                        <img src={linkedin} alt="linkedin" />
                         <h2>LinkedIn</h2>
                     </Social>
                 </Hide>
                 <Hide>
                     <Social variants={titleAnim}>
-                        <Circle />
-                        <h2>Instagram</h2>
+                        <img src={twitter} alt="twitter" />
+                        <h2>Twitter</h2>
                     </Social>
                 </Hide>
             </div>
