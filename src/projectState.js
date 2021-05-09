@@ -6,7 +6,7 @@ import videogame from "./img/videogame.jpg";
 export const projectState = () => {
     return [
         {
-            title: "Super Mario",
+            title: "Super Mario Evolution",
             mainImg: mario,
             secondaryImg: mario,
             url: "/projects/supermario",
@@ -78,23 +78,23 @@ export const projectState = () => {
         {
             title: "Video Game Quizzes",
             mainImg: videogame,
-            url: "/projects/videogame",
+            url: "/projects/videogames",
             secondaryImg: videogame,
             awards: [
                 {
                     title: "Quiz Game",
                     description:
-                        "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+                        "build for video gamer fan that they are looking to test their gaming knowledge.",
                 },
                 {
                     title: "Fetching Data from Trivia API",
                     description:
-                        "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+                        "This quiz app retrieve Data from Trivia API Database, display questions from videogame category. ",
                 },
                 {
                     title: "Build with vanilla Javascript",
                     description:
-                        "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+                        "This game quiz was bulid using pure Vanilla Javascript without frameworks. I code  things out procedurally, so I get to see the flow from start to finish.",
                 },
             ],
 

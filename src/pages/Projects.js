@@ -38,7 +38,7 @@ const Projects = () => {
                 <Frame4 variants={slider}></Frame4>
             </motion.div>
             <Website>
-                <motion.h2 variants={fade}>Super Mario</motion.h2>
+                <motion.h2 variants={fade}>Super Mario Evolution</motion.h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/projects/supermario">
                     <Hide>
