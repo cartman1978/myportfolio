@@ -1,6 +1,6 @@
 import mario from "./img/smario.jpg";
 import sport from "./img/news.jpg";
-import tour from "./img/tour.jpg";
+import tour from "./img/tourdetails.jpg";
 import videogame from "./img/vgame.jpg";
 
 export const projectState = () => {

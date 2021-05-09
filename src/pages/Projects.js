@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 // Images
 import mario from '../img/mario.jpg';
-import tour from '../img/tour.png';
+import tour from '../img/tour.jpg';
 import sport from '../img/sport.png';
 import videogame from '../img/videogame.jpg';
 // Animation
