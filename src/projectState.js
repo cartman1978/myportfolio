@@ -12,19 +12,19 @@ export const projectState = () => {
             url: "/projects/supermario",
             awards: [
                 {
-                    title: "Super mario Evolution",
+                    title: "Website Design",
                     description:
-                        "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+                        "I was responsible for both the design and the development of the Super Mario Evolution website. The website was built using a custom CSS to recall the videogame experince for the user.",
                 },
                 {
-                    title: "Different way to see Netflix.",
+                    title: "Responsive Layout",
                     description:
-                        "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+                        "From the very start, the Super Mario Evolution website was designed and developed to be fully responsive. A responsive layout allows the website to resize appropriately across a wide range of devices including desktop computers, laptops, tablets (e.g. iPad) and smartphones.",
                 },
                 {
-                    title: "Build with HTML, CSS and Bootstrap",
+                    title: "Super mario Evolution ",
                     description:
-                        "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+                        "This website was build as a part of my Milestone project at Codeinstitute, the main idea was to provide a brief story about Super Mario and how the game evolved in 30 years.",
                 },
             ],
         },
