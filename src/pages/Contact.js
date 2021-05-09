@@ -61,7 +61,11 @@ const Title = styled.div`
     margin-bottom: 4rem;
     color: #f7c456;
     @media (max-width: 1500px) {
-        margin-top: 5rem;
+        margin-top: 7rem;
+    }
+
+    @media (min-width: 1600px) {
+        margin-top: 9rem;
     }
 `;
 
