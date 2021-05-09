@@ -60,6 +60,12 @@ const Details = styled(motion.div)`
         text-decoration: none;
         color: #fff;
     }
+    @media (max-width: 768px) {
+    button {
+        margin: 5rem;
+        margin-top: 0.5rem;
+    }
+        }
 `;
 
 const HeadLine = styled.div`
@@ -71,7 +77,13 @@ const HeadLine = styled.div`
         top: 10%;
         left: 50%;
         transform: translate(-50%, -10%);
+       
     }
+    @media (max-width: 768px) {
+            h2 {
+                font-size: 1.7rem;
+            }
+        }
     img {
         width: 100%;
         height: 70vh;
