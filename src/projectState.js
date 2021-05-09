@@ -59,19 +59,19 @@ export const projectState = () => {
             secondaryImg: sport,
             awards: [
                 {
-                    title: "Fetching data from newsorg.com",
+                    title: "Fetching data from newsorg.com API",
                     description:
-                        "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+                        "I build this website using Fetch API, a modern interface that allows you to make HTTP requests to servers from web browsers.",
                 },
                 {
                     title: "Html, Css and Javascript.",
                     description:
-                        "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+                        "With HTML I provided the basic structure of the site and I used CSS to control presentation, formatting anf layout. JavaScript is used to control the behavior of different elements.",
                 },
                 {
-                    title: "Sport news from 8 different countrys.",
+                    title: "Sport news ",
                     description:
-                        "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+                        "This website is build for soccer fans around the world as it contains sport news from 8 different Countrys",
                 },
             ],
         },
