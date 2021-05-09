@@ -35,19 +35,19 @@ export const projectState = () => {
             secondaryImg: tour,
             awards: [
                 {
+                    title: "Full stack application",
+                    description:
+                        "Worked on both the front-end and back-end of the website, this project involve database and building user-facing webiste.",
+                },
+                {
+                    title: " Node.js and MongoBd",
+                    description:
+                        "Build using modern technologies: node.js, express, mongoose, mongoDB ",
+                },
+                {
                     title: "App that shows the best tours in Ireland",
                     description:
-                        "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-                },
-                {
-                    title: "Build using Node.js and MongoBd",
-                    description:
-                        "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-                },
-                {
-                    title: "Full stack application.",
-                    description:
-                        "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+                        "This website is for people that loves Hiking and they want to discover tours available in Ireland with all the information including distance, rating and price.",
                 },
             ],
 
