@@ -26,20 +26,20 @@ const Contact = () => {
                 <Hide>
                     <Social variants={titleAnim}>
                         <img src={email} alt="email" />
-                        <h2>Send an Email</h2>
+                        <a href="mailto:cartman_7802@yahoo.ie">Send an Email</a>
                     </Social>
                 </Hide>
 
                 <Hide>
                     <Social variants={titleAnim}>
                         <img src={linkedin} alt="linkedin" />
-                        <h2>LinkedIn</h2>
+                        <a href="https://www.linkedin.com/in/fabio-torti-ab171257/" target="_blank" rel="noreferrer" aria-label="linkedin" >LinkedIn</a>
                     </Social>
                 </Hide>
                 <Hide>
                     <Social variants={titleAnim}>
                         <img src={twitter} alt="twitter" />
-                        <h2>Twitter</h2>
+                        <a href="https://twitter.com/cartman78manolo" target="_blank" rel="noreferrer" aria-label="twitter" >Twitter</a>
                     </Social>
                 </Hide>
             </div>
@@ -83,8 +83,11 @@ const Circle = styled.div`
 const Social = styled(motion.div)`
     display: flex;
     align-items: center;
-    h2 {
+    a {
         margin: 2rem;
+        text-decoration: none;
+        color: #f7c456;
+        font-size: 3rem;
     }
     img {
         cursor: pointer;
