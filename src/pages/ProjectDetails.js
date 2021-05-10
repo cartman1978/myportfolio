@@ -90,6 +90,7 @@ const HeadLine = styled.div`
     @media (max-width: 768px) {
             h2 {
                 font-size: 1.7rem;
+                margin-top: 1.5rem;
             }
         }
     img {

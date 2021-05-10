@@ -8,41 +8,43 @@ import { useLocation } from 'react-router-dom';
 const MobNav = (props) => {
     const { pathname } = useLocation();
     return (
-        <Menu {...props}>
-            <ul id="navItem">
-                <li id="navList">
-                    <Link to="/">About Me</Link>
-                    <Line
-                        transition={{ duration: 0.75 }}
-                        initial={{ width: "0%" }}
-                        animate={{ width: pathname === "/" ? "50%" : "0%" }}
-                    />
-                </li>
-            </ul>
-            <ul id="navItem">
-                <li id="navList">
-                    <Link to="/projects">Projects</Link>
-                    <Line
-                        transition={{ duration: 0.75 }}
-                        initial={{ width: "0%" }}
-                        animate={{ width: pathname === "/projects" ? "50%" : "0%" }}
-                    />
-                </li>
-            </ul>
-            <ul id="navItem">
-                <li id="navList">
-                    <Link to="/contact">Contact Me</Link>
-                    <Line
-                        transition={{ duration: 0.75 }}
-                        initial={{ width: "0%" }}
-                        animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
-                    />
-                </li>
-            </ul>
+        <MiniNav>
+            <Menu {...props}>
 
-        </Menu>
+                <ul id="navItem">
+                    <li id="navList">
+                        <Link to="/">About Me</Link>
+                        <Line
+                            transition={{ duration: 0.75 }}
+                            initial={{ width: "0%" }}
+                            animate={{ width: pathname === "/" ? "50%" : "0%" }}
+                        />
+                    </li>
+                </ul>
+                <ul id="navItem">
+                    <li id="navList">
+                        <Link to="/projects">Projects</Link>
+                        <Line
+                            transition={{ duration: 0.75 }}
+                            initial={{ width: "0%" }}
+                            animate={{ width: pathname === "/projects" ? "50%" : "0%" }}
+                        />
+                    </li>
+                </ul>
+                <ul id="navItem">
+                    <li id="navList">
+                        <Link to="/contact">Contact Me</Link>
+                        <Line
+                            transition={{ duration: 0.75 }}
+                            initial={{ width: "0%" }}
+                            animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
+                        />
+                    </li>
+                </ul>
 
+            </Menu>
 
+        </MiniNav>
     )
 };
 
@@ -56,6 +58,15 @@ const Line = styled(motion.div)`
     @media (max-width: 1300px) {
         left: 13%;
     }
+`;
+
+const MiniNav = styled.div`
+   min-height: 10vh;
+   width: 100%;
+   background: #282828;
+   position: fixed;
+    top: 0;
+    z-index: 10;
 `;
 
 export default MobNav;

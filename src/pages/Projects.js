@@ -96,6 +96,12 @@ const Work = styled(motion.div)`
     h2 {
         padding: 1rem 0rem;
     }
+
+    @media (max-width: 768px) {
+        h2 {
+            margin-top: 5rem;
+        }
+    }
 `;
 
 const Website = styled(motion.div)`
