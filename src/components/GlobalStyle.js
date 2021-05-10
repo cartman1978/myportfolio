@@ -57,8 +57,9 @@ const GlobalStyle = createGlobalStyle`
         }
 
         span {
-            font-weight: bold;
+            
             color:black;
+           
         }
         #span {
             font-weight: bold;

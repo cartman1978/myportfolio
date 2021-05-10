@@ -50,7 +50,7 @@ const MobNav = (props) => {
 
 const Line = styled(motion.div)`
     height: 0.2rem;
-    background:  #FF8C00;
+    background:  #f7c456;
     width: 10%;
     position: absolute;
     bottom: -20%;
