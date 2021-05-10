@@ -58,7 +58,11 @@ const GlobalStyle = createGlobalStyle`
 
         span {
             font-weight: bold;
-            color: #f7c456;
+            color:black;
+        }
+        #span {
+            font-weight: bold;
+            color:#f7c456;
         }
         p {
             padding: 3rem 0rem;

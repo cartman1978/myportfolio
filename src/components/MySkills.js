@@ -15,7 +15,7 @@ const MySkills = () => {
             animate={controls}
             initial="hidden"
         >
-            <h2>See what <span>I can do</span></h2>
+            <h2>About <span id="span">Fabio</span></h2>
             <AnimateSharedLayout>
                 <Toggle title="About Me">
 

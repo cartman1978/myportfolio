@@ -4,8 +4,11 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Box from "@material-ui/core/Box";
+
+
 
 
 // Import Images
@@ -43,11 +46,15 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         maxWidth: '36ch',
         backgroundColor: theme.palette.background.paper,
+
     },
     inline: {
         display: 'inline',
+
     },
 }));
+
+
 
 const ServicesSection = () => {
     const classes = useStyles();
@@ -60,7 +67,7 @@ const ServicesSection = () => {
             initial="hidden"
             ref={element}>
             <Description>
-                <h2>My <span>skills</span></h2>
+                <h2>My <span id="span">skills</span></h2>
 
 
 
@@ -120,7 +127,7 @@ const ServicesSection = () => {
                                 />
                             </ListItem>
 
-                            <ListItem alignItems="flex-start">
+                            <ListItem alignItems="flex-start" >
                                 <ListItemAvatar>
                                     <img src={sass} alt="frontend" />
                                 </ListItemAvatar>
