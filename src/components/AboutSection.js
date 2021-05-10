@@ -33,7 +33,9 @@ const AboutSection = () => {
                 <motion.p variants={fade}>
                     I like to code things from scratch, and bringing ideas to life in the browser.
                     Contact me if you need help in creating amazing website.</motion.p>
-                <motion.button variants={fade}>Contact</motion.button>
+                <motion.button variants={fade}><a id="btn-cont" href="/contact">Contact</a></motion.button>
+
+
             </Description>
             <Image>
                 <motion.img variants={photoAnim} src={profile} alt="Fabio Torti" />

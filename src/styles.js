@@ -22,6 +22,10 @@ export const Description = styled.div`
     h2 {
         font-weight: lighter;
     }
+    #btn-cont {
+        text-decoration: none;
+        color: #fff;
+    }
     @media (max-width: 1300px) {
             padding: 0;
             button {
