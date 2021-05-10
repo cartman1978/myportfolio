@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from "../img/profile.jpg";
+import profile from "../img/me.jpg";
 //Styled
 import styled from "styled-components";
 import { About, Description, Image, Hide } from "../styles";
