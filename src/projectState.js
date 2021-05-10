@@ -1,5 +1,5 @@
 import mario from "./img/smario.jpg";
-import sport from "./img/news.jpg";
+import sport from "./img/snews.jpg";
 import tour from "./img/tourdetails.jpg";
 import videogame from "./img/vgame.jpg";
 
@@ -66,7 +66,7 @@ export const projectState = () => {
                 {
                     title: "Html, Css and Javascript.",
                     description:
-                        "With HTML I provided the basic structure of the site and I used CSS to control presentation, formatting anf layout. JavaScript is used to control the behavior of different elements.",
+                        "With HTML I provided the basic structure of the site and I used CSS to control presentation, formatting and layout. JavaScript is used to control the behavior of different elements.",
                 },
                 {
                     title: "Sport news ",
