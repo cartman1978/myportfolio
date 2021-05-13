@@ -15,7 +15,7 @@ const Contact = () => {
             variants={pageAnimation}
             initial="hidden"
             animate="show"
-            style={{ background: "#5959f2" }}
+            style={{ background: "#6bb9dd" }}
         >
             <Title>
                 <Hide>
@@ -49,7 +49,7 @@ const Contact = () => {
 
 const ContactStyle = styled(motion.div)` 
     padding: 5rem 10rem;
-    color: #f7c456;
+    color: #f2c994;
     min-height: 90vh;
     @media (max-width: 1500px) {
         padding: 2rem;
@@ -73,20 +73,13 @@ const Hide = styled.div`
     overflow: hidden;
 `;
 
-const Circle = styled.div`
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-    background: #f7c456;
-`;
-
 const Social = styled(motion.div)`
     display: flex;
     align-items: center;
     a {
         margin: 2rem;
         text-decoration: none;
-        color: #f7c456;
+        color: #f2c994;
         font-size: 3rem;
     }
     img {
