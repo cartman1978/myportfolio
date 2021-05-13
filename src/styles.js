@@ -31,6 +31,11 @@ export const Description = styled.div`
         color: #fff;
        margin-left: 12px;
     }
+
+    #git {
+        color: #000;
+        font-size: 1.2rem;
+    }
     @media (max-width: 1300px) {
             padding: 0;
             button {
