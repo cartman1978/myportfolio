@@ -26,10 +26,22 @@ export const Description = styled.div`
         text-decoration: none;
         color: #fff;
     }
+    #btn-git {
+        text-decoration: none;
+        color: #fff;
+       margin-left: 12px;
+    }
     @media (max-width: 1300px) {
             padding: 0;
             button {
                 margin: 2rem 0rem 5rem 0rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            padding: 0;
+            button {
+                margin: 2rem 1rem 0.3rem 0rem;
             }
         }
 `;
@@ -48,24 +60,6 @@ export const Image = styled.div`
     }
     
 `;
-
-// export const ImageSkill = styled.div`
-//     z-index: 2;
-//     flex: 1;
-//     overflow: hidden;
-//     img {
-//         width: 100%;
-//         height: 50vh;
-//         object-fit: cover;
-//         @media (max-width: 375px) {
-//             display: none;
-//         }
-//         @media (max-width: 768px) {
-//             display: none;
-//         }
-//     }
-
-// `;
 
 export const Hide = styled.div`
     overflow: hidden;

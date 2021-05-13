@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
 
     button {
         font-weight: bold;
+        margin: 1rem;
         font-size: 1.1rem;
         cursor: pointer;
         padding: 1rem 2rem;
