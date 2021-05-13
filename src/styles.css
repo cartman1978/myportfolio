@@ -38,8 +38,19 @@
 
 /* Change color on hover */
 
+.bm-item {
+    display: block;
+    color: #bdc3c7;
+}
+
 .bm-item:hover {
     color: rgb(255, 255, 255);
+}
+
+#page-wrap {
+    text-align: center;
+    /* Prevent sidebar from showing a scrollbar on page */
+    overflow: auto;
 }
 
 /* The rest copied directly from react-burger-menu docs */
@@ -97,6 +108,8 @@
 
 .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
+    top: 0px;
+    right: 0px;
 }
 
 #navItem {

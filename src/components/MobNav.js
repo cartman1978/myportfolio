@@ -5,45 +5,47 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 
+const toggleMenu = ({ isOpen }) => {
+    const menuWrap = document.querySelector(".bm-menu-wrap");
+    isOpen
+        ? menuWrap.setAttribute("aria-hidden", false)
+        : menuWrap.setAttribute("aria-hidden", true);
+};
+
+
 const MobNav = (props) => {
+
     const { pathname } = useLocation();
     return (
         <MiniNav>
-            <Menu {...props}>
-
-                <ul id="navItem">
-                    <li id="navList">
-                        <Link to="/">About Me</Link>
-                        <Line
+        <Menu noOverlay onStateChange={toggleMenu}>
+            <a className="menu-item" href="/">
+                About Me
+                <Line
                             transition={{ duration: 0.75 }}
                             initial={{ width: "0%" }}
                             animate={{ width: pathname === "/" ? "50%" : "0%" }}
                         />
-                    </li>
-                </ul>
-                <ul id="navItem">
-                    <li id="navList">
-                        <Link to="/projects">Projects</Link>
-                        <Line
+      </a>
+      
+
+            <a className="menu-item" href="/projects">
+                Projects
+                <Line
                             transition={{ duration: 0.75 }}
                             initial={{ width: "0%" }}
                             animate={{ width: pathname === "/projects" ? "50%" : "0%" }}
                         />
-                    </li>
-                </ul>
-                <ul id="navItem">
-                    <li id="navList">
-                        <Link to="/contact">Contact Me</Link>
-                        <Line
+      </a>
+            <a className="menu-item" href="/contact">
+                Contact
+                <Line
                             transition={{ duration: 0.75 }}
                             initial={{ width: "0%" }}
                             animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
                         />
-                    </li>
-                </ul>
-
-            </Menu>
-
+      </a>
+        </Menu>
         </MiniNav>
     )
 };

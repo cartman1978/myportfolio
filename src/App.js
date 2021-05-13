@@ -21,6 +21,12 @@ import './styles.css';
 
 function App() {
   const location = useLocation();
+  React.useEffect(() => {
+    const menuWrap = document.querySelector(".bm-menu-wrap");
+    if (menuWrap) {
+      menuWrap.setAttribute("aria-hidden", true);
+    }
+  }, []);
   return (
     <div className="App">
       <GlobalStyle />
