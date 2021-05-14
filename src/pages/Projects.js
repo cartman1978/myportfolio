@@ -44,7 +44,9 @@ const Projects = () => {
                     <Hide>
                         <motion.img variants={photoAnim} src={mario} alt="supermario" />
                     </Hide>
+
                 </Link>
+                <motion.a href="https://cartman1978.github.io/Super-Mario/" target="_blank">Live Demo</motion.a>
             </Website>
             <Website
                 ref={element}
@@ -56,6 +58,7 @@ const Projects = () => {
                 <Link to="/projects/tour">
                     <motion.img variants={photoAnim} src={tour} alt="tour" />
                 </Link>
+                <motion.a href="https://irelandtours.herokuapp.com/" target="_blank">Live Demo</motion.a>
             </Website>
             <Website
                 ref={element2}
@@ -68,6 +71,7 @@ const Projects = () => {
                 <Link to="/projects/sport-news">
                     <motion.img variants={photoAnim} src={sport} alt="sport-news" />
                 </Link>
+                <motion.a href="https://protected-headland-00546.herokuapp.com/" target="_blank">Live Demo</motion.a>
             </Website>
             <Website
                 ref={element3}
@@ -80,6 +84,7 @@ const Projects = () => {
                 <Link to="/projects/videogames">
                     <motion.img variants={photoAnim} src={videogame} alt="videogame" />
                 </Link>
+                <motion.a href="https://cartman1978.github.io/Video-Game-Quizzes/" target="_blank">Live Demo</motion.a>
             </Website>
             <ScrollTop />
         </Work>
@@ -116,6 +121,16 @@ const Website = styled(motion.div)`
         width: 100%;
         height: 70vh;
         object-fit: cover;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: #000;
+    }
+    @media (max-width: 414px) {
+       a {
+           font-size: 1rem;
+       }
     }
 `;
 

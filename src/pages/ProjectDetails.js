@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 import { projectState } from '../projectState';
 // Animation
 import { motion } from 'framer-motion';
-import { pageAnimation } from '../animation';
+import { pageAnimation, titleAnim } from '../animation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
 
@@ -36,6 +36,7 @@ const ProjectDetails = () => {
                     <HeadLine>
                         <h2>{project.title}</h2>
                         <img src={project.mainImg} alt="project" />
+
                     </HeadLine>
                     <Awards>
                         {project.awards.map((award) => (
@@ -86,6 +87,9 @@ const HeadLine = styled.div`
         left: 50%;
         transform: translate(-50%, -10%);
        
+    }
+    a {
+       text-align: center;
     }
     @media (max-width: 768px) {
             h2 {

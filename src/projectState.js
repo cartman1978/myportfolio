@@ -38,6 +38,8 @@ export const projectState = () => {
                     title: "Full stack application",
                     description:
                         "Worked on both the front-end and back-end of the website, this project involve database and building user-facing webiste.",
+
+
                 },
                 {
                     title: " Node.js and MongoBd",
