@@ -4,16 +4,15 @@ import { useHistory } from 'react-router-dom';
 import { projectState } from '../projectState';
 // Animation
 import { motion } from 'framer-motion';
-import { pageAnimation, titleAnim } from '../animation';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FaLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
+import { pageAnimation } from '../animation';
+
 
 import { BsArrowLeft } from "react-icons/bs";
 
 const ProjectDetails = () => {
     const history = useHistory();
     const url = history.location.pathname;
-    const [projects, setProjects] = useState(projectState);
+    const [projects] = useState(projectState);
     const [project, setProject] = useState(null);
 
     //UseEffect

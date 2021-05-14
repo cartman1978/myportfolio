@@ -1,6 +1,5 @@
 import React from 'react';
 import { bubble as Menu } from 'react-burger-menu';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
@@ -18,34 +17,34 @@ const MobNav = (props) => {
     const { pathname } = useLocation();
     return (
         <MiniNav>
-        <Menu noOverlay onStateChange={toggleMenu}>
-            <a className="menu-item" href="/">
-                About Me
+            <Menu noOverlay onStateChange={toggleMenu}>
+                <a className="menu-item" href="/">
+                    About Me
                 <Line
-                            transition={{ duration: 0.75 }}
-                            initial={{ width: "0%" }}
-                            animate={{ width: pathname === "/" ? "50%" : "0%" }}
-                        />
-      </a>
-      
+                        transition={{ duration: 0.75 }}
+                        initial={{ width: "0%" }}
+                        animate={{ width: pathname === "/" ? "50%" : "0%" }}
+                    />
+                </a>
 
-            <a className="menu-item" href="/projects">
-                Projects
+
+                <a className="menu-item" href="/projects">
+                    Projects
                 <Line
-                            transition={{ duration: 0.75 }}
-                            initial={{ width: "0%" }}
-                            animate={{ width: pathname === "/projects" ? "50%" : "0%" }}
-                        />
-      </a>
-            <a className="menu-item" href="/contact">
-                Contact
+                        transition={{ duration: 0.75 }}
+                        initial={{ width: "0%" }}
+                        animate={{ width: pathname === "/projects" ? "50%" : "0%" }}
+                    />
+                </a>
+                <a className="menu-item" href="/contact">
+                    Contact
                 <Line
-                            transition={{ duration: 0.75 }}
-                            initial={{ width: "0%" }}
-                            animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
-                        />
-      </a>
-        </Menu>
+                        transition={{ duration: 0.75 }}
+                        initial={{ width: "0%" }}
+                        animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
+                    />
+                </a>
+            </Menu>
         </MiniNav>
     )
 };
